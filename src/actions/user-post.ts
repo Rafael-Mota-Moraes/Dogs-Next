@@ -1,6 +1,6 @@
 'use server';
 
-import { TOKEN_POST, USER_POST } from '@/functions/api';
+import { USER_POST } from '@/functions/api';
 import apiError from '@/functions/api-error';
 import login from './login';
 
