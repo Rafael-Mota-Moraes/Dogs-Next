@@ -7,6 +7,7 @@ import ErrorMessage from '../helper/error-message';
 import React from 'react';
 import Link from 'next/link';
 import styles from './login-form.module.css';
+import { useUser } from '@/context/user-context';
 
 function FormButton() {
   const { pending } = useFormStatus();
@@ -32,6 +33,8 @@ export default function LoginForm() {
   React.useEffect(() => {
     if (state.ok) window.location.href = '/conta';
   }, [state.ok]);
+
+  const { user } = useUser();
   return (
     <>
       <form action={action} className={styles.form}>
