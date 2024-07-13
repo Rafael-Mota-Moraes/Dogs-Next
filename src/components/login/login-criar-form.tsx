@@ -5,7 +5,7 @@ import Input from '@/components/forms/input';
 import ErrorMessage from '../helper/error-message';
 import React from 'react';
 import styles from './login-form.module.css';
-import userPost from '@/app/actions/user-post';
+import userPost from '@/actions/user-post';
 
 function FormButton() {
   const { pending } = useFormStatus();
